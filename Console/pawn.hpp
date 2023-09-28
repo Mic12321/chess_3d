@@ -5,7 +5,11 @@
 
 class Pawn: public Piece{
 
-    
+    private:
+        bool never_moved;
+
+    public:
+        bool is_valid_move(Location new_location);
     
 };
 

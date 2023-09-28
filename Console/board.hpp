@@ -17,6 +17,7 @@ class Board {
     public:
         int get_column() const;
         int get_row() const;
+        std::vector<std::vector<Piece>> get_content();
 
     
 
