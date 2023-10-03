@@ -2,13 +2,13 @@
 #define BOARD_HPP
 
 #include "colour.hpp"
-#include "piece.hpp"
 #include <vector>
+#include <string>
 
 class Board {
 
     private:
-        std::vector<std::vector<Piece>> content;
+        std::vector<std::vector<std::string>> grid;
     
     protected:
         int column;

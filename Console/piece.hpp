@@ -3,6 +3,8 @@
 
 #include "colour.hpp"
 #include "location.hpp"
+#include <string>
+#include <vector>
 
 class Piece {
 
@@ -14,6 +16,9 @@ class Piece {
         virtual bool is_valid_move();
         Colour get_colour();
         
+
+    public:
+        virtual bool is_valid_move(Location currentLocation, Location targetLocation, std::vector<std::vector<std::string>> grid);
 
 };
     
